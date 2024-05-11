@@ -34,7 +34,10 @@ El modelo de negocios es el de una ferreteria de barrio que estando en expansió
 
 Las tablas generadas fueron 10 de las cuales 9 fueron creadas e ingestadas mediante la utilización de tablas CSV y una décima tábla fue generada a fin de servir de LOG y ser posteriormente ingestada mediante triggers a medida que se produjeran cambiós en las táblas clientes o proveedores
 
-A continueación se adjunta el detalle de las tablas involucradas
+A continuación se adjunta el detalle de las tablas involucradas
+
+![Tablas1de2](./media/images/tablas1.png)
+![Tablas2de2](./media/images/tablas1.png)
 
 ## Estructura e ingesta de datos
 
@@ -65,11 +68,11 @@ A continuación se carga la siguiente tabla hasta completar las 9 (solo no se ca
 
 ## Objetos de la base de datos
 ### Vistas
-> 1.- Creamos una vista que nos devuelva los 3 clientes que mas dinero gastaron ordenando los mismos del que mas al que menos gastó
-> 2.- Creamos una vista que nos diga cuales fueron los 2 proveedores a los que mas le compramos.
-> 3.- Creamos una vista que nos muestre a los proveedores que están radicados en CABA
-> 4.- Creamos una vista que nos muestre a los proveedores que se encuentran en el interior 
-> 5.- Creamos una vista que nos muestre Apellido y Nombre de cada cliente y que luego los concatene
+> - 1.- Creamos una vista que nos devuelva los 3 clientes que mas dinero gastaron ordenando los mismos del que mas al que menos gastó
+> - 2.- Creamos una vista que nos diga cuales fueron los 2 proveedores a los que mas le compramos.
+> - 3.- Creamos una vista que nos muestre a los proveedores que están radicados en CABA
+> - 4.- Creamos una vista que nos muestre a los proveedores que se encuentran en el interior 
+> - 5.- Creamos una vista que nos muestre Apellido y Nombre de cada cliente y que luego los concatene
 
 ### Funciones
 > - 1.- Creamos una función que nos retorna la descripción de un producto cuando ingresamos el nombre del mismo
@@ -94,6 +97,16 @@ A continuación se carga la siguiente tabla hasta completar las 9 (solo no se ca
 ## Back up de la base de datos
 
 ## Herramientas y tecnologias usadas
+Las tecnologias usadas fueron el lenguaje SQL y sus sublenguajes 
+ - DDL (Data Definition Language): Se utiliza para definir y modificar la estructura de las bases de datos y sus objetos, como tablas, índices, vistas, y restricciones. Algunos ejemplos de comandos DDL son CREATE, ALTER y DROP.
+
+ - DML (Data Manipulation Language): Se utiliza para manipular los datos en la base de datos, como insertar, actualizar, eliminar y seleccionar registros en las tablas. Los comandos DML más comunes son INSERT, UPDATE, DELETE y SELECT.
+
+ - DCL (Data Control Language): Se utiliza para gestionar los permisos de acceso a los datos y otros objetos de la base de datos. Los comandos DCL incluyen GRANT (conceder permisos) y REVOKE (revocar permisos).
+
+ Las herramientas fueron Workbench a fin de correr el motor MySQL
+
+ También se utilizó DrawIo a fin de la planificación inicial de la base de datos y finalmente GitHub así como Git a fin de poder subir el proyecto y sus avances a la nube
 
 ## Como levantar el proyecto en CodeSpaces GitHub
 * env: Archivo con contraseñas y data secretas
