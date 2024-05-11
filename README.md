@@ -17,15 +17,6 @@
 Inserción de datos
 Se calculan los datos y se cargan en el archivo excel "SQL tablas.xlsx" a continuación de cada tabla cuidando de cargar cada registro separando los datos con coma a fin de luego pegar en un excel nuevo los registros para cada tabla y guardarlos como .csv 
 
-Diagrama de entidad relación
-
-    ![Modelo DER](/media/images/DER.png)
-
-    - Listado de tablas con descripción de estructura (columna,descripción, tipo de datos, tipo de clave)
-    - Scripts de creación de cada objeto de la base de datos
-    - Scripts de inserción de datos
-    - Informes generados en base a la información de la base
-    - Herramientas y tecnologías usadas
 
 ## Tematica del proyecto
 
@@ -49,30 +40,53 @@ A continueación se adjunta el detalle de las tablas involucradas
 
 Se calculan los datos y se cargan en el archivo excel "SQL tablas.xlsx" a continuación de cada tabla cuidando de cargar cada registro separando los datos con coma a fin de luego pegar en un excel nuevo los registros para cada tabla y guardarlos como .csv 
 
+ingestaremos los registros de la tabla "clientes"
+
+![Untitled](./media/images/ingesta1.png)
+
+Se importa el archivo clientes
+
+![Untitled](./media/images/ingesta2.png)
+
+Se usa la tabla existente y no se trunca porque la tabla ya estaba vacia
+
+![Untitled](./media/images/ingesta3.png)
+![Untitled](./media/images/ingesta4.png)
+
+Se verifica la codificación (aunque viene por defecto) y se controla la coincidencias entre columnas
+
+![Untitled](./media/images/ingesta5.png)
+
+y tabla completa…
+
+![Untitled](./media/images/ingesta6.png)
+
+A continuación se carga la siguiente tabla hasta completar las 9 (solo no se carga la de log ya que se cargará a medida que se realicen las inserciones, modificaciones o eliminaciones de registros)
+
 ## Objetos de la base de datos
 ### Vistas
->1.- Creamos una vista que nos devuelva los 3 clientes que mas dinero gastaron ordenando los mismos del que mas al que menos gastó
-2.- Creamos una vista que nos diga cuales fueron los 2 proveedores a los que mas le compramos.
-3.- Creamos una vista que nos muestre a los proveedores que están radicados en CABA
-4.- Creamos una vista que nos muestre a los proveedores que se encuentran en el interior 
->5.- Creamos una vista que nos muestre Apellido y Nombre de cada cliente y que luego los concatene
+> - 1.- Creamos una vista que nos devuelva los 3 clientes que mas dinero gastaron ordenando los mismos del que mas al que menos gastó
+ - 2.- Creamos una vista que nos diga cuales fueron los 2 proveedores a los que mas le compramos.
+ - 3.- Creamos una vista que nos muestre a los proveedores que están radicados en CABA
+ - 4.- Creamos una vista que nos muestre a los proveedores que se encuentran en el interior 
+> - 5.- Creamos una vista que nos muestre Apellido y Nombre de cada cliente y que luego los concatene
 
 ### Funciones
->1.- Creamos una función que nos retorna la descripción de un producto cuando ingresamos el nombre del mismo
->2.- Creamos una función que ante el apellido de un cliente nos retorna su número de teléfono
+> - 1.- Creamos una función que nos retorna la descripción de un producto cuando ingresamos el nombre del mismo
+> - 2.- Creamos una función que ante el apellido de un cliente nos retorna su número de teléfono
 
 ### Store Procedures
->1.- Creamos un procedimiento que nos devuelva quienes fueron los 3 clientes que mas veces compraron un producto considerando todas las facturas si un cliente compró mas de una vez. Buscamos por código de producto
-2.- Creamos un procedimiento que nos devuelva cual fue el producto mas comprado por un cliente >considerando todas las facturas si este compró mas de una vez.Buscamos por apellido
+> - 1.- Creamos un procedimiento que nos devuelva quienes fueron los 3 clientes que mas veces compraron un producto considerando todas las facturas si un cliente compró mas de una vez. Buscamos por código de producto
+ - 2.- Creamos un procedimiento que nos devuelva cual fue el producto mas comprado por un cliente >considerando todas las facturas si este compró mas de una vez.Buscamos por apellido
 
 ### Triggers
 
->1.- Creamos un trigger que cargue un registro identificando al usuario que haya insertado un registro en la tabla de proveedores
-2.- Creamos un trigger que cargue un registro identificando al usuario que haya modificado un registro en la tabla de proveedores
-3.- Creamos un trigger que cargue un registro identificando al usuario que haya eliminado un registro en la tabla de proveedores
-4.- Creamos un trigger que cargue un registro identificando al usuario que haya insertado un registro en la tabla de clientes
-5.- Creamos un trigger que cargue un registro identificando al usuario que haya modificado un registro en la tabla de clientes
-6.- Creamos un trigger que cargue un registro identificando al usuario que haya eliminado un registro en >la tabla de clientes.
+> - 1.- Creamos un trigger que cargue un registro identificando al usuario que haya insertado un registro en la tabla de proveedores
+ - 2.- Creamos un trigger que cargue un registro identificando al usuario que haya modificado un registro en la tabla de proveedores
+ - 3.- Creamos un trigger que cargue un registro identificando al usuario que haya eliminado un registro en la tabla de proveedores
+ - 4.- Creamos un trigger que cargue un registro identificando al usuario que haya insertado un registro en la tabla de clientes
+ - 5.- Creamos un trigger que cargue un registro identificando al usuario que haya modificado un registro en la tabla de clientes
+ - 6.- Creamos un trigger que cargue un registro identificando al usuario que haya eliminado un registro en >la tabla de clientes.
 
 ## Roles y permisos
 
