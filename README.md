@@ -4,48 +4,15 @@
 
 
 # <center>Entrega de proyecto final</center>
-Jeanneret Mariano Martin
 
-@Comision
+* ~ Alumno: Jeanneret Mariano Martin
 
-@Tutor
+* ~ Comision; 53180
 
-@Docente
+* ~ Tutor: Santiago Angel Gonzalez Martin
 
+* ~ Docente: Anderson Michel TORRES
 
-
----
-
-### **Consignas:**
-- La base de datos debe contener al menos:
-    * ~ 15 tablas, entre las cuales debe haber al menos 1 tabla de hechos,  2 tablas transaccionales.
-    * ~ 5 vistas.
-    * ~ 2 stored procedure.
-    * ~ 2  trigger.
-    * ~ 2 funciones
-    
-Situación Inicial
-
-Contactados por el comercio “Los tres hermanos” dedicado al rubro ferretero se pactaron y realizaron 2 entrevistas iniciales con el analista funcional luego de una primer entrevista con el sector de ventas.
-
-Entrevista equipo ventas
-
-El vendedor asignado recabó inicialmente las necesidades del comercio en cuestión el cual cuenta con un extenso inventario asi como un caudal de cuantiosas operaciones diarias.
-
-El planteo inicial fue contar con una base de datos para poder administrar las ventas y el stock al tiempo que los potenciales clientes manifestaron interes en integrar posteriormente otras sucursales a la base de datos desde que están pensando en expandirse.
-
-Entrevista analista funcional
-
-En función de lo anterior se concretaron dos entrevistas con el analista funcional asignado donde se recabó la información necesaria a fin de cumplir la tarea encomendada.
-Cabe destacar que el cliente manifestó interes, a lo largo de las entrevistas, respecto de la posibilidad de escalar la base de datos a fin de abarcar dos sucursales que estarían abriendo en los próximos meses.
-En función de la apertura manifestada el analista propuso generar una aplicación web integral a fin de administrar la base de datos en forma remota asi como el consecuente servicio de backend de la misma.
-También se ofreció al cliente la posibilidad de generar posteriormente una plataforma de comercio electrónico lo cual si bién le resultó prematuro tampoco fue algo que descartara.
-Finalmente se ofreció integrar en la misma base las listas de precio de los preveedores así como las compras realizadas a fin de tener el stock actualizado y un debido registro de los precios de compra a fin de actualizar los de venta ante cada lista nueva lo que fue inmediatamente aceptado por el cliente.
-En vista de lo expuesto se propuso armar una base inicial con 10 tablas a fin de cubrir compras, ventas y stock.
-Acordado el diseño de las mismas se remite tanto el diagrama de entidad relación como la descripción de las tablas involucradas cuya implementación inicial propuesta se encuentra detallada en el script que se adjunta en fomato electrónico.
-Quedando a disposición para las aclaraciones que estime corresponder.
-Segunda Preentrega
-Se procede a detallar lo requerido para la segunda preentrega que está compuesto por la descripción de la implementación de la inserción de datos y el detalle de la implementación de las vistas, funciones, los stored procedures y triggers.
 
 Inserción de datos
 Se calculan los datos y se cargan en el archivo excel "SQL tablas.xlsx" a continuación de cada tabla cuidando de cargar cada registro separando los datos con coma a fin de luego pegar en un excel nuevo los registros para cada tabla y guardarlos como .csv 
@@ -54,29 +21,58 @@ Diagrama de entidad relación
 
     ![Modelo DER](/media/images/DER.png)
 
-
-
     - Listado de tablas con descripción de estructura (columna,descripción, tipo de datos, tipo de clave)
     - Scripts de creación de cada objeto de la base de datos
     - Scripts de inserción de datos
     - Informes generados en base a la información de la base
     - Herramientas y tecnologías usadas
 
-
-
----
-
 ## Tematica del proyecto
+
+Contactados por el comercio “Los tres hermanos” dedicado al rubro ferretero se pactan y realizan 2 entrevistas iniciales con el analista funcional luego de una primer entrevista con el sector de ventas.
 
 ## Modelo de negocio
 
+El modelo de negocios es el de una ferreteria de barrio que estando en expansión quiere generar una base de datos sobre el stock para manejar las existencias a partir de las compras y las ventas al tiempo que busca registrar las facturas de ambas operaciones. En un futuro estaría vinculando la base a una plataforma de ventas online al tiempo que piensa abrir mas sucursales de seguir creciendo en ventas.
+
 ## Diagrama entidad relacion (DER)
+
+![DER](./media/images/DER.png)
 
 ## Listado de tablas y descripcion
 
+Las tablas generadas fueron 10 de las cuales 9 fueron creadas e ingestadas mediante la utilización de tablas CSV y una décima tábla fue generada a fin de servir de LOG y ser posteriormente ingestada mediante triggers a medida que se produjeran cambiós en las táblas clientes o proveedores
+
+A continueación se adjunta el detalle de las tablas involucradas
+
 ## Estructura e ingesta de datos
 
+Se calculan los datos y se cargan en el archivo excel "SQL tablas.xlsx" a continuación de cada tabla cuidando de cargar cada registro separando los datos con coma a fin de luego pegar en un excel nuevo los registros para cada tabla y guardarlos como .csv 
+
 ## Objetos de la base de datos
+### Vistas
+>1.- Creamos una vista que nos devuelva los 3 clientes que mas dinero gastaron ordenando los mismos del que mas al que menos gastó
+2.- Creamos una vista que nos diga cuales fueron los 2 proveedores a los que mas le compramos.
+3.- Creamos una vista que nos muestre a los proveedores que están radicados en CABA
+4.- Creamos una vista que nos muestre a los proveedores que se encuentran en el interior 
+>5.- Creamos una vista que nos muestre Apellido y Nombre de cada cliente y que luego los concatene
+
+### Funciones
+>1.- Creamos una función que nos retorna la descripción de un producto cuando ingresamos el nombre del mismo
+>2.- Creamos una función que ante el apellido de un cliente nos retorna su número de teléfono
+
+### Store Procedures
+>1.- Creamos un procedimiento que nos devuelva quienes fueron los 3 clientes que mas veces compraron un producto considerando todas las facturas si un cliente compró mas de una vez. Buscamos por código de producto
+2.- Creamos un procedimiento que nos devuelva cual fue el producto mas comprado por un cliente >considerando todas las facturas si este compró mas de una vez.Buscamos por apellido
+
+### Triggers
+
+>1.- Creamos un trigger que cargue un registro identificando al usuario que haya insertado un registro en la tabla de proveedores
+2.- Creamos un trigger que cargue un registro identificando al usuario que haya modificado un registro en la tabla de proveedores
+3.- Creamos un trigger que cargue un registro identificando al usuario que haya eliminado un registro en la tabla de proveedores
+4.- Creamos un trigger que cargue un registro identificando al usuario que haya insertado un registro en la tabla de clientes
+5.- Creamos un trigger que cargue un registro identificando al usuario que haya modificado un registro en la tabla de clientes
+6.- Creamos un trigger que cargue un registro identificando al usuario que haya eliminado un registro en >la tabla de clientes
 
 ## Roles y permisos
 
