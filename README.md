@@ -72,9 +72,10 @@ Se calculan los datos y se cargan en el archivo excel "SQL tablas.xlsx" a contin
 3.- Creamos un trigger que cargue un registro identificando al usuario que haya eliminado un registro en la tabla de proveedores
 4.- Creamos un trigger que cargue un registro identificando al usuario que haya insertado un registro en la tabla de clientes
 5.- Creamos un trigger que cargue un registro identificando al usuario que haya modificado un registro en la tabla de clientes
-6.- Creamos un trigger que cargue un registro identificando al usuario que haya eliminado un registro en >la tabla de clientes
+6.- Creamos un trigger que cargue un registro identificando al usuario que haya eliminado un registro en >la tabla de clientes.
 
 ## Roles y permisos
+
 
 ## Back up de la base de datos
 
