@@ -5,13 +5,13 @@
 
 # <center>Entrega de proyecto final</center>
 
-* ~ Alumno: Jeanneret Mariano Martin
+* Alumno: Jeanneret Mariano Martin
 
-* ~ Comision; 53180
+* Comision; 53180
 
-* ~ Tutor: Santiago Angel Gonzalez Martin
+* Tutor: Santiago Angel Gonzalez Martin
 
-* ~ Docente: Anderson Michel TORRES
+* Docente: Anderson Michel TORRES
 
 
 Inserción de datos
