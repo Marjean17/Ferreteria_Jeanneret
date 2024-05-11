@@ -65,11 +65,11 @@ A continuación se carga la siguiente tabla hasta completar las 9 (solo no se ca
 
 ## Objetos de la base de datos
 ### Vistas
-> - 1.- Creamos una vista que nos devuelva los 3 clientes que mas dinero gastaron ordenando los mismos del que mas al que menos gastó
- - 2.- Creamos una vista que nos diga cuales fueron los 2 proveedores a los que mas le compramos.
- - 3.- Creamos una vista que nos muestre a los proveedores que están radicados en CABA
- - 4.- Creamos una vista que nos muestre a los proveedores que se encuentran en el interior 
-> - 5.- Creamos una vista que nos muestre Apellido y Nombre de cada cliente y que luego los concatene
+> 1.- Creamos una vista que nos devuelva los 3 clientes que mas dinero gastaron ordenando los mismos del que mas al que menos gastó
+> 2.- Creamos una vista que nos diga cuales fueron los 2 proveedores a los que mas le compramos.
+> 3.- Creamos una vista que nos muestre a los proveedores que están radicados en CABA
+> 4.- Creamos una vista que nos muestre a los proveedores que se encuentran en el interior 
+> 5.- Creamos una vista que nos muestre Apellido y Nombre de cada cliente y que luego los concatene
 
 ### Funciones
 > - 1.- Creamos una función que nos retorna la descripción de un producto cuando ingresamos el nombre del mismo
@@ -77,16 +77,16 @@ A continuación se carga la siguiente tabla hasta completar las 9 (solo no se ca
 
 ### Store Procedures
 > - 1.- Creamos un procedimiento que nos devuelva quienes fueron los 3 clientes que mas veces compraron un producto considerando todas las facturas si un cliente compró mas de una vez. Buscamos por código de producto
- - 2.- Creamos un procedimiento que nos devuelva cual fue el producto mas comprado por un cliente >considerando todas las facturas si este compró mas de una vez.Buscamos por apellido
+> - 2.- Creamos un procedimiento que nos devuelva cual fue el producto mas comprado por un cliente considerando todas las facturas si este compró mas de una vez.Buscamos por apellido
 
 ### Triggers
 
 > - 1.- Creamos un trigger que cargue un registro identificando al usuario que haya insertado un registro en la tabla de proveedores
- - 2.- Creamos un trigger que cargue un registro identificando al usuario que haya modificado un registro en la tabla de proveedores
- - 3.- Creamos un trigger que cargue un registro identificando al usuario que haya eliminado un registro en la tabla de proveedores
- - 4.- Creamos un trigger que cargue un registro identificando al usuario que haya insertado un registro en la tabla de clientes
- - 5.- Creamos un trigger que cargue un registro identificando al usuario que haya modificado un registro en la tabla de clientes
- - 6.- Creamos un trigger que cargue un registro identificando al usuario que haya eliminado un registro en >la tabla de clientes.
+> - 2.- Creamos un trigger que cargue un registro identificando al usuario que haya modificado un registro en la tabla de proveedores
+> - 3.- Creamos un trigger que cargue un registro identificando al usuario que haya eliminado un registro en la tabla de proveedores
+> - 4.- Creamos un trigger que cargue un registro identificando al usuario que haya insertado un registro en la tabla de clientes
+> - 5.- Creamos un trigger que cargue un registro identificando al usuario que haya modificado un registro en la tabla de clientes
+> - 6.- Creamos un trigger que cargue un registro identificando al usuario que haya eliminado un registro en la tabla de clientes.
 
 ## Roles y permisos
 
