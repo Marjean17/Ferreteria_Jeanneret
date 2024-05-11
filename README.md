@@ -4,13 +4,13 @@
 
 
 # <center>Entrega de proyecto final</center>
-Jeanneret Mariano Martin
+@Alumno: Jeanneret Mariano Martin
 
-@Comision
+@Comision; 53180
 
-@Tutor
+@Tutor: Santiago Angel Gonzalez Martin
 
-@Docente
+@Docente: Anderson Michel TORRES
 
 
 
@@ -67,11 +67,16 @@ Diagrama de entidad relación
 ---
 
 ## Tematica del proyecto
-
+Contactados por el comercio “Los tres hermanos” dedicado al rubro ferretero se pactan y realizan 2 entrevistas iniciales con el analista funcional luego de una primer entrevista con el sector de ventas.
 ## Modelo de negocio
-
+El modelo de negocios es el de una ferreteria de barrio que estando en expansión quiere generar una base de datos sobre el stock para manejar las existencias a partir de las compras y las ventas al tiempo que busca registrar las facturas de ambas operaciones. En un futuro estaría vinculando la base a una plataforma de ventas online al tiempo que piensa abrir mas sucursales de seguir creciendo en ventas.
 ## Diagrama entidad relacion (DER)
+<center>
 
+
+![DER]
+   
+</center>
 ## Listado de tablas y descripcion
 
 ## Estructura e ingesta de datos
