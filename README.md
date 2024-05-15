@@ -118,4 +118,4 @@ Las tecnologias usadas fueron el lenguaje SQL y sus sublenguajes
 * `make clean-db` para limpiar la base de datos
 * `make test-db` inspecciona los datos en tablas
 * `make backup-db` realiza el backup de la base
-* `make acces-db` da acceso a la base de datos
+* `make acces-db` da acceso a la base de datos.
