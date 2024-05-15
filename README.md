@@ -113,4 +113,9 @@ Las tecnologias usadas fueron el lenguaje SQL y sus sublenguajes
 * Makefile: Abstracción de creacción del proyecto
 * docker-compose.yml: Permite generar las bases de datos en forma de contenedores
 
-#### Pasos para arrancar el proyecto
+#### Pasos para arrancar el proyecto en terminal (Linux)
+* `make` si da un error de no conexión al socket volver a ejecutar
+* `make clean-db` para limpiar la base de datos
+* `make test-db` inspecciona los datos en tablas
+* `make backup-db` realiza el backup de la base
+* `make acces-db` da acceso a la base de datos
