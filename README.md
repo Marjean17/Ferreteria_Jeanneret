@@ -13,7 +13,7 @@
 
 * Docente: Anderson Michel TORRES
 
-
+`./objects/store_procedures.sql`
 Inserción de datos
 Se calculan los datos y se cargan en el archivo excel "SQL tablas.xlsx" a continuación de cada tabla cuidando de cargar cada registro separando los datos con coma a fin de luego pegar en un excel nuevo los registros para cada tabla y guardarlos como .csv 
 
