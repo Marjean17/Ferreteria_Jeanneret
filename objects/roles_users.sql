@@ -56,3 +56,4 @@ CREATE USER IF NOT EXISTS 'Marcos'@'%' IDENTIFIED BY '111' COMMENT "Jefe - Equip
 GRANT role_ventas, role_jefe_ventas TO 'Marcos'@'%';
 
 FLUSH PRIVILEGES;
+SHOW FULL TABLES IN ferreteria3Hermanos WHERE TABLE_TYPE = 'VIEW';
