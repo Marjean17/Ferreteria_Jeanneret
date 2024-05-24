@@ -2,41 +2,41 @@ USE information_schema;
 
 -- Creo un usuario Admin y le doy todos los privilegios
 CREATE USER IF NOT EXISTS 'admin'@'%' IDENTIFIED BY '123';
-GRANT ALL PRIVILEGES ON ferreteria3hermanos.* TO 'admin'@'%';
+GRANT ALL PRIVILEGES ON ferreteria3Hermanos.* TO 'admin'@'%';
 FLUSH PRIVILEGES;
 
 -- CREACION DE ROLES Y ASGNACION DE PRIVILEGIOS
 CREATE ROLE IF NOT EXISTS role_compras_caba;
-GRANT SELECT ON ferreteria3hermanos.proveedores TO role_compras_caba;
-GRANT SELECT ON ferreteria3hermanos.descripcion_productos TO role_compras_caba;
-GRANT SELECT ON ferreteria3hermanos.stock TO role_compras_caba;
-GRANT SELECT, INSERT, UPDATE, DELETE ON ferreteria3hermanos.proveedorescaba TO role_compras_caba;
-GRANT SELECT, INSERT ON ferreteria3hermanos.factura_compra TO role_compras_caba;
-GRANT SELECT, INSERT, UPDATE, DELETE ON ferreteria3hermanos.detalle_compra TO role_compras_caba;
+GRANT SELECT ON ferreteria3Hermanos.proveedores TO role_compras_caba;
+GRANT SELECT ON ferreteria3Hermanos.descripcion_productos TO role_compras_caba;
+GRANT SELECT ON ferreteria3Hermanos.stock TO role_compras_caba;
+GRANT SELECT, INSERT, UPDATE, DELETE ON ferreteria3Hermanos.proveedorescaba TO role_compras_caba;
+GRANT SELECT, INSERT ON ferreteria3Hermanos.factura_compra TO role_compras_caba;
+GRANT SELECT, INSERT, UPDATE, DELETE ON ferreteria3Hermanos.detalle_compra TO role_compras_caba;
 
 CREATE ROLE IF NOT EXISTS role_compras_interior;
-GRANT SELECT ON ferreteria3hermanos.proveedores TO role_compras_interior;
-GRANT SELECT ON ferreteria3hermanos.descripcion_productos TO role_compras_interior;
-GRANT SELECT ON ferreteria3hermanos.stock TO role_compras_interior;
-GRANT SELECT, INSERT, UPDATE, DELETE ON ferreteria3hermanos.proveedoresinterior TO role_compras_interior;
-GRANT SELECT, INSERT ON ferreteria3hermanos.factura_compra TO role_compras_interior;
-GRANT SELECT, INSERT, UPDATE, DELETE ON ferreteria3hermanos.detalle_compra TO role_compras_interior;
+GRANT SELECT ON ferreteria3Hermanos.proveedores TO role_compras_interior;
+GRANT SELECT ON ferreteria3Hermanos.descripcion_productos TO role_compras_interior;
+GRANT SELECT ON ferreteria3Hermanos.stock TO role_compras_interior;
+GRANT SELECT, INSERT, UPDATE, DELETE ON ferreteria3Hermanos.proveedoresinterior TO role_compras_interior;
+GRANT SELECT, INSERT ON ferreteria3Hermanos.factura_compra TO role_compras_interior;
+GRANT SELECT, INSERT, UPDATE, DELETE ON ferreteria3Hermanos.detalle_compra TO role_compras_interior;
 
 CREATE ROLE IF NOT EXISTS role_ventas;
-GRANT SELECT ON ferreteria3hermanos.clientes TO role_ventas;
-GRANT SELECT ON ferreteria3hermanos.descripcion_productos TO role_ventas;
-GRANT SELECT ON ferreteria3hermanos.stock TO role_ventas;
-GRANT SELECT, INSERT ON ferreteria3hermanos.factura_venta TO role_ventas;
-GRANT SELECT, INSERT, UPDATE, DELETE ON ferreteria3hermanos.detalle_venta TO role_ventas;
+GRANT SELECT ON ferreteria3Hermanos.clientes TO role_ventas;
+GRANT SELECT ON ferreteria3Hermanos.descripcion_productos TO role_ventas;
+GRANT SELECT ON ferreteria3Hermanos.stock TO role_ventas;
+GRANT SELECT, INSERT ON ferreteria3Hermanos.factura_venta TO role_ventas;
+GRANT SELECT, INSERT, UPDATE, DELETE ON ferreteria3Hermanos.detalle_venta TO role_ventas;
 
 
 CREATE ROLE IF NOT EXISTS role_jefe_compras;
-GRANT SELECT, INSERT, UPDATE, DELETE ON ferreteria3hermanos.proveedores TO role_jefe_compras;
-GRANT SELECT, INSERT, UPDATE, DELETE ON ferreteria3hermanos.stock TO role_jefe_compras;
+GRANT SELECT, INSERT, UPDATE, DELETE ON ferreteria3Hermanos.proveedores TO role_jefe_compras;
+GRANT SELECT, INSERT, UPDATE, DELETE ON ferreteria3Hermanos.stock TO role_jefe_compras;
 
 CREATE ROLE IF NOT EXISTS role_jefe_ventas;
-GRANT SELECT, INSERT, UPDATE, DELETE ON ferreteria3hermanos.clientes TO role_jefe_ventas;
-GRANT SELECT, INSERT, UPDATE, DELETE ON ferreteria3hermanos.stock TO role_jefe_ventas;
+GRANT SELECT, INSERT, UPDATE, DELETE ON ferreteria3Hermanos.clientes TO role_jefe_ventas;
+GRANT SELECT, INSERT, UPDATE, DELETE ON ferreteria3Hermanos.stock TO role_jefe_ventas;
 
 -- CREACION DE USUARIOS Y ASIGNACION DE ROLES
 
