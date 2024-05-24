@@ -10,7 +10,7 @@ CREATE ROLE IF NOT EXISTS role_compras_caba;
 GRANT SELECT ON ferreteria3Hermanos.proveedores TO role_compras_caba;
 GRANT SELECT ON ferreteria3Hermanos.descripcion_productos TO role_compras_caba;
 GRANT SELECT ON ferreteria3Hermanos.stock TO role_compras_caba;
-GRANT SELECT ON ferreteria3Hermanos.proveedoresCABA TO role_compras_caba WITH GRANT OPTION;
+GRANT SELECT ON VIEW ferreteria3Hermanos.proveedoresCABA TO role_compras_caba WITH GRANT OPTION;
 GRANT SELECT, INSERT ON ferreteria3Hermanos.factura_compra TO role_compras_caba;
 GRANT SELECT, INSERT, UPDATE, DELETE ON ferreteria3Hermanos.detalle_compra TO role_compras_caba;
 
@@ -18,7 +18,7 @@ CREATE ROLE IF NOT EXISTS role_compras_interior;
 GRANT SELECT ON ferreteria3Hermanos.proveedores TO role_compras_interior;
 GRANT SELECT ON ferreteria3Hermanos.descripcion_productos TO role_compras_interior;
 GRANT SELECT ON ferreteria3Hermanos.stock TO role_compras_interior;
-GRANT SELECT ON ferreteria3Hermanos.proveedoresInterior TO role_compras_interior WITH GRANT OPTION;
+GRANT SELECT ON VIEW ferreteria3Hermanos.proveedoresInterior TO role_compras_interior WITH GRANT OPTION;
 GRANT SELECT, INSERT ON ferreteria3Hermanos.factura_compra TO role_compras_interior;
 GRANT SELECT, INSERT, UPDATE, DELETE ON ferreteria3Hermanos.detalle_compra TO role_compras_interior;
 
