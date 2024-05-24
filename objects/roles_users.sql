@@ -1,4 +1,4 @@
-use mysql;
+use ferreteria3hermanos;
 
 -- Creo un usuario Admin y le doy todos los privilegios
 CREATE USER IF NOT EXISTS 'admin'@'%' IDENTIFIED BY '123';
