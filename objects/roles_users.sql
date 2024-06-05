@@ -6,6 +6,15 @@ GRANT ALL PRIVILEGES ON ferreteria3Hermanos.* TO 'admin'@'%';
 FLUSH PRIVILEGES;*/
 
 -- CREACION DE ROLES Y ASGNACION DE PRIVILEGIOS
+
+DROP ROLE IF EXISTS 
+    role_compras_caba
+,   role_compras_interior
+,   role_ventas
+,   role_jefe_ventas
+,   role_jefe_compras ;
+
+
 CREATE ROLE IF NOT EXISTS role_compras_caba;
 CREATE ROLE IF NOT EXISTS role_compras_interior;
 CREATE ROLE IF NOT EXISTS role_ventas;
