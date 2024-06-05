@@ -5,6 +5,13 @@ USE mysql;
 GRANT ALL PRIVILEGES ON ferreteria3Hermanos.* TO 'admin'@'%';
 FLUSH PRIVILEGES;*/
 
+DROP ROLE IF EXISTS 
+    role_compras_caba
+,   role_compras_interior
+,   role_ventas
+,   role_jefe_ventas
+,   role_jefe_compras ;
+
 -- CREACION DE ROLES Y ASGNACION DE PRIVILEGIOS
 CREATE ROLE IF NOT EXISTS role_compras_caba;
 CREATE ROLE IF NOT EXISTS role_compras_interior;
