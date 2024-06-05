@@ -14,7 +14,7 @@ DOCKER_COMPOSE_FILE=./docker-compose.yml
 DATABASE_CREATION=./structure/database_structure.sql
 DATABASE_POPULATION=./structure/population.sql
 
-FILES := $(wildcard ./objects/*.sql)
+FILES = ./objects/functions.sql ./objects/triggers.sql ./objects/views.sql ./objects/roles_users.sql ./objects/store_procedures.sql
 
 
 .PHONY: all up objects clean
